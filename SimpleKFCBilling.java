@@ -15,7 +15,7 @@ public class SimpleKFCBilling {
         System.out.println("2. Burger - $5");
         System.out.println("3. Fries - $3");
         System.out.println("4. Drink - $2");
-        System.out.println("5. chicken bryini - 250");
+        System.out.println("5. chicken bryini - $15");
     }
 
     public static int takeOrder() {
@@ -36,6 +36,8 @@ public class SimpleKFCBilling {
             price = 3;
         } else if (orderNumber == 4) {
             price = 2;
+        }else if (orderNumber == 5) {
+            price = 15;
         }
         System.out.println("The price is: $" + price);
         System.out.println("Please enter the amount to pay:");
